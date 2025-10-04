@@ -73,6 +73,13 @@ declare global {
     email: string;
   };
 
+  // Minimal user type for news emailing, matching getAllUsersForNewsEmail()
+  type UserForNewsEmail = {
+    id: string;
+    email: string;
+    name: string;
+  };
+
   type Stock = {
     symbol: string;
     name: string;
